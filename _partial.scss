@@ -1,0 +1,29 @@
+/*Variabler*/
+
+$background: #E5E5E5;
+$fontcolor: #0000BF;
+
+@mixin heading {
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+font-weight: 600;
+font-style: normal;
+color: $fontcolor;
+font-size: 1.5rem;
+padding-bottom: 1rem;
+}
+
+@mixin parag {
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: $fontcolor;
+    padding-bottom: 1rem;
+}
+
+@mixin svarknap {
+    font-family: "hiragino-kaku-gothic-pron", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: $fontcolor;
+    padding-bottom: 1rem;
+}

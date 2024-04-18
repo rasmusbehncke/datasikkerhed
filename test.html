@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'jxk8mwx',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
-    
+    <div class="branchingContainer" >
+        <img class="bgimg" src="img/test-bg.png" alt="">
+        <img class="logo" src="img/logo.png" alt="">
+
+            <div class="branchingBox" >
+                <H3>Overskrift med respons på sidste svar</H3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam quas temporibus eius, nesciunt rem magni similique dolore ab vel labore aperiam fugit quia dolores voluptate tempore voluptates ad inventore.
+                </p>
+                <a href="">
+                    <div class="box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)" >
+                    Valgmulighed A - Numquam quam quas temporibus eius, nesciunt rem magni similique dolore ab vel labore aperiam
+                    </div>
+                </a>
+                <a href="">
+                    <div class="box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)" >
+                    Valgmulighed B - Numquam quam quas temporibus eius, nesciunt rem magni similique dolore ab vel labore aperiam</a>
+                    </div>
+                <a href="">
+                    <div class="box" onmouseover="addShadow(this)" onmouseout="removeShadow(this)" >
+                    Valgmulighed C - Numquam quam quas temporibus eius, nesciunt rem magni similique dolore ab vel labore aperiam</a>
+                    </div>
+            </div>
+
+    </div>
 </body>
 </html>
