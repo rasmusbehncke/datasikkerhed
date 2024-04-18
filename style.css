@@ -70,4 +70,15 @@ a {
 
 .box.shadow {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/*Mobil*/
+@media (max-width: 700px) {
+  .branchingBox {
+    width: 90%;
+    transform: translate(-50%, 20%);
+  }
+  .box:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
 }/*# sourceMappingURL=style.css.map */
