@@ -1,7 +1,23 @@
 //Skygge på box-knapper
 
 
+// Lyt efter mouseover-hændelsen på det overordnede element
+document.getElementById('question').addEventListener('mouseover', function(event) {
+  // Kontroller om mouseover-hændelsen er fra en knap
+  if (event.target.matches('.box')) {
+    // Tilføj skyggeeffekten
+    event.target.classList.add('shadow');
+  }
+});
 
+// Lyt efter mouseout-hændelsen på det overordnede element
+document.getElementById('question').addEventListener('mouseout', function(event) {
+  // Kontroller om mouseout-hændelsen er fra en knap
+  if (event.target.matches('.box')) {
+    // Fjern skyggeeffekten
+    event.target.classList.remove('shadow');
+  }
+});
 
 
 
