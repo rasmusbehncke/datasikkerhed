@@ -1,3 +1,17 @@
+//scrolleffekt
+
+function updateProgressBar() {
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolledPercentage = (window.pageYOffset / scrollableHeight) * 100;
+  const progressBar = document.getElementById('progress-bar');
+  progressBar.style.display = 'block'; // Show progress bar
+  progressBar.style.height = scrolledPercentage + '%'; // Update height based on scroll
+}
+
+// Event listener for scroll event
+window.addEventListener('scroll', updateProgressBar);
+
+
 //Skygge på box-knapper
 
 
