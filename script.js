@@ -2,7 +2,7 @@
 
 function updateProgressBar() {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const scrolledPercentage = (window.scrollY / scrollableHeight) * 100;
+  const scrolledPercentage = (window.scrollY / scrollableHeight) * 98;
   const progressBar = document.getElementById('progress-bar');
   progressBar.style.display = 'block'; // Show progress bar
   progressBar.style.height = scrolledPercentage + '%'; // Update height based on scroll
@@ -13,6 +13,7 @@ window.addEventListener('scroll', updateProgressBar);
 
 
 //Skygge på box-knapper
+
 
 
 // Lyt efter mouseover-hændelsen på det overordnede element
@@ -36,6 +37,7 @@ document.getElementById('question').addEventListener('mouseout', function(event)
 
 
 
+
 /* fungerende kode:
 var boxes = document.querySelectorAll('.box');
 
@@ -52,12 +54,14 @@ function removeShadow() {
   this.classList.remove('shadow');
 }
 */
+
+
 //Branching
 
 
-var answer1Btn = document.getElementById('answer1');
-var answer2Btn = document.getElementById('answer2');
-var answer3Btn = document.getElementById('answer3');
+let answer1Btn = document.getElementById('answer1');
+let answer2Btn = document.getElementById('answer2');
+let answer3Btn = document.getElementById('answer3');
 
 // Tilføj event listeners til hver knap
 answer1Btn.addEventListener('click', function() {
@@ -74,7 +78,7 @@ answer3Btn.addEventListener('click', function() {
 
 // Funktion til at skifte spørgsmål og svarmuligheder
 function nextQuestion(answer) {
-  var questionDiv = document.getElementById('question');
+  let questionDiv = document.getElementById('question');
   
   // Skift spørgsmålet og svarmulighederne baseret på det valgte svar
   if (answer === 'answer1') {
