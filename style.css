@@ -6,12 +6,32 @@
   background-color: #F5F5F5;
 }
 
+.hero {
+  width: 100%;
+  height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .headerimg {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 7rem;
+  height: 30rem;
+  position: relative;
+}
+
+.herotekst {
   position: absolute;
+  left: 50%;
+  top: 15rem;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.herotekst p {
+  background-color: transparent;
+  color: #F5F5F5;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +50,7 @@
 
 .contentcontainer {
   display: grid;
-  grid-template-columns: 1fr 500px 1fr;
+  grid-template-columns: 1fr 600px 1fr;
 }
 .contentcontainer .maincontent {
   grid-column-start: 2;
@@ -42,13 +62,21 @@
   justify-content: center;
 }
 .introcontainer .intro {
-  width: 500px;
-  margin-top: 10rem;
+  width: 700px;
+  margin-top: -4rem;
+  background-color: white;
+  position: relative;
+}
+.introcontainer .intro p {
+  background-color: transparent;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .infoimg {
-  border-radius: 2rem;
-  width: 100%;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 1rem;
   margin-top: -3rem;
 }
@@ -64,6 +92,50 @@
 
 .articlehead {
   display: flex;
+  margin-top: 5rem;
+  align-items: baseline;
+}
+
+.breaker {
+  width: 100%;
+  background-color: #0000BF;
+  height: 3px;
+  position: relative;
+  top: -3rem;
+}
+
+.testHero {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.testbg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.testlink {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #0000BF;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #F5F5F5;
+  font-size: 3rem;
+  background-color: transparent;
 }
 
 .branchingContainer {
@@ -82,6 +154,7 @@
   margin: 2rem;
   position: absolute;
   background-color: transparent;
+  z-index: 2;
 }
 
 .branchingBox {
