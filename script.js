@@ -37,25 +37,6 @@ document.getElementById('question').addEventListener('mouseout', function(event)
 
 
 
-
-/* fungerende kode:
-var boxes = document.querySelectorAll('.box');
-
-boxes.forEach(function(box) {
-  box.addEventListener('mouseover', addShadow);
-  box.addEventListener('mouseout', removeShadow);
-});
-
-function addShadow() {
-  this.classList.add('shadow');
-}
-
-function removeShadow() {
-  this.classList.remove('shadow');
-}
-*/
-
-
 //Branching
 
 
@@ -83,15 +64,14 @@ function nextQuestion(answer) {
   // Skift spørgsmålet og svarmulighederne baseret på det valgte svar
   if (answer === 'answer1') {
     questionDiv.innerHTML = `
-      <h3>Spørgsmål 2</h3>
-      <p>Vælg en svarmulighed:</p>
-      <a href="#" id="svar1" class="box">Svarmulighed 1</a>
-      <a href="#" id="svar2" class="box">Svarmulighed 2</a>
-      <a href="#" id="svar3" class="box">Svarmulighed 3</a>
+      <h2>Nej - lav unikt</h2>
+      <p>Hvordan laver du et unikt password?:</p>
+      <a href="#" id="svar1" class="box">Minimumskrav</a>
+      <a href="#" id="svar2" class="box">Minimun 15 tegn etc</a>
     `;
   } else if (answer === 'answer2') {
     questionDiv.innerHTML = `
-      <h3>Spørgsmål 3</h3>
+      <h2>Spørgsmål 3</h2>
       <p>Vælg en svarmulighed:</p>
       <a href="#" id="svar1" class="box">Svarmulighed 1</a>
       <a href="#" id="svar2" class="box">Svarmulighed 2</a>
@@ -99,7 +79,7 @@ function nextQuestion(answer) {
     `;
   } else if (answer === 'answer3') {
     questionDiv.innerHTML = `
-      <h3>Spørgsmål 4</h3>
+      <h2>Spørgsmål 4</h2>
       <p>Vælg en svarmulighed:</p>
       <a href="#" id="svar1" class="box">Svarmulighed 1</a>
       <a href="#" id="svar2" class="box">Svarmulighed 2</a>
