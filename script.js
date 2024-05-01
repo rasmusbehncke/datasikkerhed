@@ -67,23 +67,21 @@ function nextQuestion(answer) {
       <h2>Nej - lav unikt</h2>
       <p>Hvordan laver du et unikt password?:</p>
       <a href="#" id="svar1" class="box">Minimumskrav</a>
-      <a href="#" id="svar2" class="box">Minimun 15 tegn etc</a>
+      <a href="#" id="svar2" class="box">Minimum 15 tegn etc</a>
     `;
   } else if (answer === 'answer2') {
     questionDiv.innerHTML = `
-      <h2>Spørgsmål 3</h2>
-      <p>Vælg en svarmulighed:</p>
-      <a href="#" id="svar1" class="box">Svarmulighed 1</a>
-      <a href="#" id="svar2" class="box">Svarmulighed 2</a>
-      <a href="#" id="svar3" class="box">Svarmulighed 3</a>
+      <h2>En ny version af et gammelt password er skidt</h2>
+      <p>Dan i stedet et nyt. Hvordan? </p>
+      <a href="#" id="svar1" class="box">Minimumskrav - for memory</a>
+      <a href="#" id="svar2" class="box">Minimum 15 tegn etc.</a>
     `;
   } else if (answer === 'answer3') {
     questionDiv.innerHTML = `
-      <h2>Spørgsmål 4</h2>
-      <p>Vælg en svarmulighed:</p>
-      <a href="#" id="svar1" class="box">Svarmulighed 1</a>
-      <a href="#" id="svar2" class="box">Svarmulighed 2</a>
-      <a href="#" id="svar3" class="box">Svarmulighed 3</a>
+      <h2>Super - det er vigtigt at have unikke passwords til forskellige platforme.</h2>
+      <p>Hvordan skaber du dit nye password?</p>
+      <a href="#" id="svar1" class="box">Minimumskrav</a>
+      <a href="#" id="svar2" class="box">Minimum 15 tegn etc.</a>
     `;
   }
 }
