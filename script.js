@@ -100,7 +100,7 @@ function nextQuestion(answer) {
     // Skift spørgsmålet og svarmulighederne baseret på det valgte svar
     questionDiv.innerHTML = `
       <h2>Lidt har også ret</h2>
-      <p>Det er naturligvis okay blot at opfylde hjemmesidens krav til et password. Langt de fleste hjemmesider kræver et paswword på mindst 8 tegn - og derfor findes der også flest passwords med netop det antal karakterer. Det gør denne længde passwords mere sårbare overfor hackere. Overvej derfor om du kan lave et længere password. Center for Datasikkerhed anbefaler 15 tegn.</p>
+      <p>Det er naturligvis okay blot at opfylde hjemmesidens krav til et password. Langt de fleste hjemmesider kræver et paswword på mindst 8 tegn - og derfor findes der også flest passwords med netop det antal karakterer. Det gør denne længde passwords mere sårbare overfor hackere. Overvej derfor om du kan lave et længere password. Center for Cybersikkerhed anbefaler 15 tegn.</p>
       <a href="#" id="nytSvar3" class="box">Videre</a>
     `;
   } else if (answer === 'nytSvar2') {
