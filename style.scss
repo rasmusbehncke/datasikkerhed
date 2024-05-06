@@ -53,6 +53,7 @@
   display: none;
 }
 
+//Content:
 
 .contentcontainer{
   display: grid;
@@ -102,7 +103,7 @@
   display: flex;
   margin-top: 5rem;
   align-items: baseline;
-
+  
 }
 
 
@@ -119,20 +120,22 @@
   width: 100%;
   height: auto;
   position: relative;
+      .testbg{
+        object-fit: cover;
+        width: 100%;
+        height: 50vh;
+      }
+      .testlink{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+       }
 }
 
-.testbg{
-  object-fit: cover;
-  width: 100%;
-  height: 50vh;
-}
- .testlink{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
- }
+
+
 
 
 
