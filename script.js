@@ -71,9 +71,10 @@ function nextQuestion(answer) {
       <p>Det er nemt at komme til at genbruge sine passwords igen og igen. Der er mange specifikke krav til passwords og det kan virke uoverskueligt at finde på nye komplicerede koder - og også huske dem igen. 
       </p><p>
       Der er hjælp at få, men der er desværre ingen vej uden om - dit password skal være unikt. Hvordan vil du skabe dit nye password?:</p>
-      <a href="#" id="nytSvar1" class="box">Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</a>
-      <br><br>
-      <a href="#" id="nytSvar2" class="box">Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</a>
+      <a href="#">
+      <div id="nytSvar1" class="box"> Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</div>
+      <a href="#"> 
+      <div id="nytSvar2" class="box"> Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</div>
     `;
   } else if (answer === 'answer2') {
     questionDiv.innerHTML = `
@@ -83,39 +84,44 @@ function nextQuestion(answer) {
       Dette er en dårlig vane. Hackere er også bekendt med denne vane. Hvis dit gamle password er blevet lækket, er det meget nemt at finde frem til den opdaterede version af dit gamle password.</p>
       <p>
       Der er hjælp at få, men der er desværre ingen vej uden om - dit password skal være unikt. Hvordan vil du skabe dit nye password?:</p>
-      <a href="#" id="nytSvar1" class="box">Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</a>
-      <br><br>
-      <a href="#" id="nytSvar2" class="box">Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</a>
+      <a href="#"> 
+      <div id="nytSvar1" class="box"> Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</div>
+      <a href="#"> 
+      <div id="nytSvar2" class="box"> Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</div>
     `;
   } else if (answer === 'answer3') {
     questionDiv.innerHTML = `
       <h2>Sådan - det er nemlig vigtigt at have unikke passwords til forskellige platforme.</h2>
       <p>Hvordan skaber du dit nye password?</p>
-      <a href="#" id="nytSvar1" class="box">Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</a>
-      <br><br>
-      <a href="#" id="nytSvar2" class="box">Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</a>
+      <a href="#">
+      <div id="nytSvar1" class="box"> Jeg danner et password der lige præcis opfylder sidens minimumskrav - ofte 8 tegn.</div>
+      <a href="#"> 
+      <div id="nytSvar2" class="box">Jeg danner et password på mindst 15 tegn med en blanding af små og store bogstaver, tal og tegn.</div>
     `;
   } else if (answer === 'nytSvar1') {
     questionDiv.innerHTML = `
       <h2>Lidt har også ret</h2>
       <p>Det er naturligvis okay blot at opfylde hjemmesidens krav til et password. Langt de fleste hjemmesider kræver et paswword på mindst 8 tegn - og derfor findes der også flest passwords med netop det antal karakterer. Det gør denne længde passwords mere sårbare overfor hackere. Overvej derfor om du kan lave et længere password. Center for Cybersikkerhed anbefaler 15 tegn.</p>
-      <a href="#" id="nytSvar3" class="box">Videre</a>
+      <a href="#"> 
+      <div id="nytSvar3" class="box">Videre</div>
     `;
   } else if (answer === 'nytSvar2') {
     questionDiv.innerHTML = `
       <h2>Læk!</h2>
-      <p>Dit nye og sikre password er blevet lækket. Du skal derfor på den igen - lave endnu et nyt password. Hvordan forholder du dig?</p>
-      <a href="#" id="nytSvar4" class="box">Jeg genbruger mit unikke password men tilføjer noget ekstra, såsom årstal. Det er nemmere at huske.</a>
-      <br><br>
-      <a href="#" id="nytSvar5" class="box">Jeg laver et helt nyt unikt password igen.</a>
+      <p>Åh nej! Dit nye og sikre password er blevet lækket. Du skal derfor på den igen - lave endnu et nyt password. Hvordan forholder du dig?</p>
+      <a href="#">
+      <div id="nytSvar4" class="box"> Jeg genbruger mit unikke password men tilføjer noget ekstra, såsom årstal. Det er nemmere at huske.</div>
+      <a href="#">
+      <div id="nytSvar5" class="box">Jeg laver et helt nyt unikt password igen.</div>
     `;
   } else if (answer === 'nytSvar3') {
     questionDiv.innerHTML = `
       <h2>Læk!</h2>
       <p>Dit nye og sikre password er blevet lækket. Du skal derfor på den igen - lave endnu et nyt password. Hvordan forholder du dig?</p>
-      <a href="#" id="nytSvar4" class="box">Jeg genbruger mit unikke password men tilføjer noget ekstra, såsom årstal. Det er nemmere at huske.</a>
-      <br><br>
-      <a href="#" id="nytSvar5" class="box">Jeg laver et helt nyt unikt password igen.</a>
+      <a href="#">
+      <div id="nytSvar4" class="box"> Jeg genbruger mit unikke password men tilføjer noget ekstra, såsom årstal. Det er nemmere at huske.</div>
+      <a href="#">
+      <div id="nytSvar5" class="box">Jeg laver et helt nyt unikt password igen.</div>
     `;
   } else if (answer === 'nytSvar4') {
     questionDiv.innerHTML = `
@@ -123,32 +129,37 @@ function nextQuestion(answer) {
       <p>Det er nemt at komme til at genbruge sine passwords igen og igen. Der er mange specifikke krav til passwords og det kan virke uoverskueligt at finde på nye komplicerede koder - og også huske dem igen. 
       </p><p>
       Der er hjælp at få, men der er desværre ingen vej uden om - dit password skal være unikt.</p>
-      <a href="#" id="nytSvar6" class="box">Forstået - videre</a>
+      <a href="#"> 
+      <div id="nytSvar6" class="box">Forstået - videre</div>
     `;
   } else if (answer === 'nytSvar5'|| answer === 'nytSvar6' ) {
     questionDiv.innerHTML = `
       <h2>Du har nu skabt et sikkert password</h2>
       <p>Tillykke med det - det er både langt og kryptisk. Hvordan husker du det?</p>
-      <a href="#" id="nytSvar7" class="box">Jeg memorerer det</a>
-      <br><br>
-      <a href="#" id="nytSvar8" class="box">Jeg skriver det ned</a>
-      <br><br>
-      <a href="#" id="nytSvar9" class="box">Jeg bruger en password manager</a>
+      <a href="#"> 
+      <div id="nytSvar7" class="box">Jeg memorerer det</div>
+      <a href="#"> 
+      <div id="nytSvar8" class="box">Jeg skriver det ned</div>
+      <a href="#"> 
+      <div id="nytSvar9" class="box">Jeg bruger en password manager</div>
     `;
   } else if (answer === 'nytSvar7') {
     questionDiv.innerHTML = `
       <h2>Huskespillet</h2>
       <p>Det er en udemærket strategi. Men mens du husker dit password, så husk på at du gerne skal have unikke passwords til hvert login. Hvis det er for overvældende, kan du overveje at benytte en password manager.</p>
+      <a href="index.html"> Tak for din opmærksomhed. Du kan vende tilbage til forsiden her. </a>
     `;
   } else if (answer === 'nytSvar8') {
     questionDiv.innerHTML = `
       <h2>Skriv det ned</h2>
       <p>Det kan være særdeles hjælpsomt at skrive sine passwords ned. Men om du gør det fysisk eller digitalt, så sørg endelig for at henholdsvis lås dem inde eller kryptere dem.</p>
+      <a href="index.html"> Tak for din opmærksomhed. Du kan vende tilbage til forsiden her. </a>
     `;
   } else if (answer === 'nytSvar9') {
     questionDiv.innerHTML = `
       <h2>Password manageren</h2>
       <p>Med dine passwords sikkert gemt i en password manager kan du glemme dine passwords. Du bliver logget ind med biometrisk input - ansigtsgenkendelse eller fingeraftryk. Og hvis du skal bruge et password på en enhed der ikke er sat op med din password manager kan du blot åbne manageren på en af dine andre enheder og finde dit kartotek af adgangskoder.</p>
+      <a href="index.html"> Tak for din opmærksomhed. Du kan vende tilbage til forsiden her. </a>
     `;
   } 
 
